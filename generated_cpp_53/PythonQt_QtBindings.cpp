@@ -14,6 +14,7 @@ void PythonQt_init_QtXml(PyObject*);
 void PythonQt_init_QtXmlPatterns(PyObject*);
 void PythonQt_init_QtUiTools(PyObject*);
 void PythonQt_init_QtMultimedia(PyObject*);
+void PythonQt_init_QtQTest(PyObject*);
 
 PYTHONQT_EXPORT void PythonQt_init_QtBindings()
   {
@@ -44,9 +45,13 @@ PYTHONQT_EXPORT void PythonQt_init_QtBindings()
   #ifdef PYTHONQT_WRAP_Qtuitools
   PythonQt_init_QtUiTools(0);
   #endif
-  
+
   #ifdef PYTHONQT_WRAP_Qtmultimedia
   PythonQt_init_QtMultimedia(0);
+  #endif
+
+  #ifdef PYTHONQT_WRAP_Qttestlib
+  PythonQt_init_QtQTest(0);
   #endif
 
   #ifdef PYTHONQT_WRAP_Qtwebkit

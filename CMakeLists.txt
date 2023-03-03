@@ -33,6 +33,7 @@ set(qtlibs
   Sql
   Svg
   Multimedia
+  QTest
   UiTools
   Xml
   XmlPatterns
@@ -87,6 +88,7 @@ set(qtlib_to_wraplib_WebKitWidgets webkit)
 
 set(qt5_wrapped_lib_depends_gui Multimedia PrintSupport)
 set(qt5_wrapped_lib_depends_multimedia MultimediaWidgets)
+set(qt5_wrapped_lib_depends_qtest TestLib)
 set(qt5_wrapped_lib_depends_quick QuickWidgets)
 
 foreach(qtlib ${qtlibs})
